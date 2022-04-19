@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
 
 export const Decrement = () => {
   // const state = useSelector((state) => state);
@@ -15,3 +15,7 @@ export const Decrement = () => {
 
   return <button onClick={handleClick}>Decrement</button>;
 };
+
+// export const Increment = () => {
+//   return <button onClick={() => console.log(1111)}>Increment</button>;
+// };
