@@ -1,2 +1,2 @@
-import{jsx as r}from"react/jsx-runtime";import{useSelector as t}from"react-redux";var e=function(){var e=t((function(r){return r}));return console.log(e),r("button",{children:"Decrement"})};export{e as Decrement};
+import{jsx as r}from"react/jsx-runtime";import{useSelector as n}from"react-redux";var t=function(){return t=Object.assign||function(r){for(var n,t=1,o=arguments.length;t<o;t++)for(var e in n=arguments[t])Object.prototype.hasOwnProperty.call(n,e)&&(r[e]=n[e]);return r},t.apply(this,arguments)},o=function(){var o=n((function(r){return r}));return console.log(o),r("button",t({onClick:function(){return console.log("hello")}},{children:"Decrement"}))};export{o as Decrement};
 //# sourceMappingURL=index.js.map
