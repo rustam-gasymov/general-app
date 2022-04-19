@@ -9,7 +9,7 @@ export const configureToolsSlice = createSlice({
     setDecrementValue: (state) => {
       console.log("decrement");
 
-      state.value = state.value - 1;
+      state.value = state.value - 10;
     },
   },
   extraReducers: {},
