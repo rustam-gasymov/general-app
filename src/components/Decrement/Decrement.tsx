@@ -11,7 +11,6 @@ export const Decrement = () => {
 
   const handleClick = () => {
     console.log("helloccccc world");
-    //@ts-nocheck
     dispatch(setDecrementValue());
   };
 
