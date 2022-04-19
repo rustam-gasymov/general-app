@@ -10,7 +10,7 @@ export const Decrement = () => {
   console.log("dispatch");
 
   const handleClick = () => {
-    console.log("hi i am decrement");
+    console.log("hi i am am am am decrementussssssss");
     dispatch(setDecrementValue());
   };
 
