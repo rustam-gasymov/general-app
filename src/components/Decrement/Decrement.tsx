@@ -1,4 +1,6 @@
-// import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import styles from "./Decrement.module.css";
+import "./decrement.css";
 
 export const Decrement = () => {
   // const state = useSelector((state) => state);
@@ -8,12 +10,16 @@ export const Decrement = () => {
   // console.log("dispatch");
 
   const handleClick = () => {
-    console.log("hello world");
+    console.log("helloccccc world");
     //@ts-ignore
     // dispatch(setDecrementValue());
   };
 
-  return <button onClick={handleClick}>Decrement</button>;
+  return (
+    <button className="btn" onClick={handleClick}>
+      Decrement
+    </button>
+  );
 };
 
 // export const Increment = () => {
