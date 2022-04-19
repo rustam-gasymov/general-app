@@ -1,9 +1,17 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 export const Decrement = () => {
   const state = useSelector((state) => state);
+  const dispatch = useDispatch();
 
   console.log(state);
+  console.log("dispatch");
 
-  return <button onClick={() => console.log("hello world")}>Decrement</button>;
+  const handleClick = () => {
+    console.log("hello world");
+    //@ts-ignore
+    dispatch(setDecrementValue());
+  };
+
+  return <button onClick={handleClick}>Decrement</button>;
 };
