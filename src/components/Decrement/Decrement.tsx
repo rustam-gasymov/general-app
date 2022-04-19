@@ -3,11 +3,11 @@ import styles from "./Decrement.module.css";
 import "./decrement.css";
 
 export const Decrement = () => {
-  // const state = useSelector((state) => state);
-  // const dispatch = useDispatch();
+  const state = useSelector((state) => state);
+  const dispatch = useDispatch();
 
-  // console.log(state);
-  // console.log("dispatch");
+  console.log(state);
+  console.log("dispatch");
 
   const handleClick = () => {
     console.log("helloccccc world");
