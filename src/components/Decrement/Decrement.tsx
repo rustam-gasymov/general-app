@@ -12,7 +12,7 @@ export const Decrement = () => {
   const handleClick = () => {
     console.log("helloccccc world");
     //@ts-ignore
-    // dispatch(setDecrementValue());
+    dispatch(setDecrementValue());
   };
 
   return (
