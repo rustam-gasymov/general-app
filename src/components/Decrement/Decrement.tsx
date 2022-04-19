@@ -4,7 +4,8 @@ import "./decrement.css";
 
 export const Decrement = () => {
   const state = useSelector((state) => state);
-  const dispatch = useDispatch();
+  //@ts-ignore
+  const dispatch = useAppDispatch();
 
   console.log(state);
   console.log("dispatch");
