@@ -5,5 +5,5 @@ export const Decrement = () => {
 
   console.log(state);
 
-  return <button onClick={() => console.log("hello")}>Decrement</button>;
+  return <button onClick={() => console.log("hello world")}>Decrement</button>;
 };
