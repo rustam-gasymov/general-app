@@ -1,18 +1,17 @@
-import { useDispatch, useSelector } from "react-redux";
-import styles from "./Decrement.module.css";
 import "./decrement.css";
+import { useAppDispatch, useAppSelector } from "../../app";
+import { setDecrementValue } from "../../features/counter/counterSlice";
 
 export const Decrement = () => {
-  const state = useSelector((state) => state);
-  //@ts-ignore
-  const dispatch = useDispatch();
+  const state = useAppSelector((state) => state);
+  const dispatch = useAppDispatch();
 
   console.log(state);
   console.log("dispatch");
 
   const handleClick = () => {
     console.log("helloccccc world");
-    //@ts-ignore
+    //@ts-nocheck
     dispatch(setDecrementValue());
   };
 
@@ -22,7 +21,3 @@ export const Decrement = () => {
     </button>
   );
 };
-
-// export const Increment = () => {
-//   return <button onClick={() => console.log(1111)}>Increment</button>;
-// };
