@@ -12,9 +12,11 @@ export const Decrement = () => {
   console.log("dispatch");
 
   const handleClick = () => {
-    console.log("hi i am decrementus with state and new reducer!!!! Am ia working?????");
+    console.log(
+      "hi i am decrementus with state and new reducer!!!! Am ia working????? If not say me!"
+    );
     setValue((prev) => prev + 112);
-    dispatch(setDecrementValue());
+    dispatch(setDecrementValue(value));
     dispatch(setNumber(100));
     console.log("its current value from usestate", value);
     console.log(state.configureTools);

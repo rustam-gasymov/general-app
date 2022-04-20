@@ -11,8 +11,8 @@ export const configureToolsSlice = createSlice({
       console.log("settnumberits new reducer from slice", payload);
       state.counter += payload;
     },
-    setDecrementValue: (state) => {
-      console.log("decrement");
+    setDecrementValue: (state, { payload }) => {
+      console.log("decrement from decrement", payload);
 
       state.value = state.value - 10;
     },
