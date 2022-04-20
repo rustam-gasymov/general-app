@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../app";
-//@ts-ignore
-import { setDecrementValue, setNumber } from "@test/state";
+import { setDecrementValue } from "./DecrementSlice";
 import "./decrement.css";
 
 export const Decrement = () => {
