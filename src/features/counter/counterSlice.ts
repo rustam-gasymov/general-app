@@ -4,8 +4,13 @@ export const configureToolsSlice = createSlice({
   name: "configureTools",
   initialState: {
     value: 0,
+    counter: 0,
   },
   reducers: {
+    setNumber: (state, { payload }) => {
+      console.log("settnumberits new reducer from slice", payload);
+      state.counter += payload;
+    },
     setDecrementValue: (state) => {
       console.log("decrement");
 
@@ -15,6 +20,6 @@ export const configureToolsSlice = createSlice({
   extraReducers: {},
 });
 
-export const { setDecrementValue } = configureToolsSlice.actions;
+export const { setDecrementValue, setNumber } = configureToolsSlice.actions;
 
 export default configureToolsSlice.reducer;

@@ -1,8 +1,10 @@
 import "./decrement.css";
 import { useAppDispatch, useAppSelector } from "../../app";
 import { setDecrementValue } from "../../features/counter/counterSlice";
+import React from "react";
 
 export const Decrement = () => {
+  const [value, setValue] = React.useState(0);
   const state = useAppSelector((state) => state);
   const dispatch = useAppDispatch();
 
@@ -10,8 +12,11 @@ export const Decrement = () => {
   console.log("dispatch");
 
   const handleClick = () => {
-    console.log("hi i am am am am decrementussssssss!!!!");
+    console.log("hi i am am am am decrementussssssss with state and new reducer!!!!");
+    setValue((prev) => prev + 112);
     dispatch(setDecrementValue());
+    console.log("its current value from usestate", value);
+    console.log(state.configureTools);
   };
 
   return (
