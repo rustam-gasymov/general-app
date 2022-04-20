@@ -12,7 +12,7 @@ export const Decrement = () => {
   console.log("dispatch");
 
   const handleClick = () => {
-    console.log("hi i am am am am decrementussssssss with state and new reducer!!!!");
+    console.log("hi i am decrementus with state and new reducer!!!! Am ia working?????");
     setValue((prev) => prev + 112);
     dispatch(setDecrementValue());
     dispatch(setNumber(100));
