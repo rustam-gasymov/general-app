@@ -1,10 +1,11 @@
-import "./decrement.css";
+import React, { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../app";
-import { setDecrementValue, setNumber } from "../../features/counter/counterSlice";
-import React from "react";
+//@ts-ignore
+import { setDecrementValue, setNumber } from "@test/state";
+import "./decrement.css";
 
 export const Decrement = () => {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
   const state = useAppSelector((state) => state);
   const dispatch = useAppDispatch();
 
@@ -17,7 +18,6 @@ export const Decrement = () => {
     );
     setValue((prev) => prev + 112);
     dispatch(setDecrementValue(value));
-    dispatch(setNumber(100));
     console.log("its current value from usestate", value);
     console.log(state.configureTools);
   };
