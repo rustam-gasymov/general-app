@@ -9,7 +9,7 @@ export const decrementSlice = createSlice({
     setDecrementValue: (state, { payload }) => {
       console.log("setIncrementValue new state", payload);
 
-      state.value = state.value - 10;
+      state.value = state.value - payload;
     },
   },
   extraReducers: {},
