@@ -27,10 +27,9 @@ const plugins = [
 
 const config = [
   {
-    preserveModules: true,
     input: "./src/components/index.ts",
     output: {
-      dir: "./lib/bundle.d.ts",
+      file: "./lib/bundle.d.ts",
       name: pkg.name,
     },
     plugins: [dts()],

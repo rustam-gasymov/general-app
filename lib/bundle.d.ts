@@ -1,6 +1,8 @@
 import * as _reduxjs_toolkit from '@reduxjs/toolkit';
 import * as immer_dist_internal from 'immer/dist/internal';
 
+declare const Decrement: () => JSX.Element;
+
 declare const decrementSlice: _reduxjs_toolkit.Slice<{
     value: number;
 }, {
@@ -13,4 +15,4 @@ declare const decrementSlice: _reduxjs_toolkit.Slice<{
 }, "decrement">;
 declare const setDecrementValue: _reduxjs_toolkit.ActionCreatorWithPayload<any, string>;
 
-export { decrementSlice, setDecrementValue };
+export { Decrement, decrementSlice, setDecrementValue };
