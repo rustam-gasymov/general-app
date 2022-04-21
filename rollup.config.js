@@ -28,10 +28,7 @@ const plugins = [
 const config = [
   {
     input: "./src/components/index.ts",
-    output: {
-      file: "./lib/bundle.d.ts",
-      name: pkg.name,
-    },
+    output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
   },
   {
