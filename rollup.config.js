@@ -4,11 +4,8 @@ import multi from "@rollup/plugin-multi-entry";
 import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
-import styles from "rollup-plugin-styles";
 import { terser } from "rollup-plugin-terser";
-import { babel } from "@rollup/plugin-babel";
 import pkg from "./package.json";
-import css from "@modular-css/rollup";
 
 const plugins = [
   typescript({
@@ -16,10 +13,10 @@ const plugins = [
   }),
   peerDepsExternal({ includeDependencies: true }),
   multi(),
-  babel({ babelHelpers: "bundled" }),
   localResolve(),
   terser(),
-  styles(),
+  postcss(),
+  ,
 ];
 
 const config = [

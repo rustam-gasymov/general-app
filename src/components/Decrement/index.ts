@@ -1,2 +1,4 @@
-export * from "./Decrement";
-export * from "./DecrementSlice";
+import { Decrement } from "./Decrement";
+import { decrementSlice } from "./DecrementSlice";
+
+export { Decrement, decrementSlice };

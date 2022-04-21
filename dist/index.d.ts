@@ -13,6 +13,5 @@ declare const decrementSlice: _reduxjs_toolkit.Slice<{
         type: string;
     }) => void;
 }, "decrement">;
-declare const setDecrementValue: _reduxjs_toolkit.ActionCreatorWithPayload<any, string>;
 
-export { Decrement, decrementSlice, setDecrementValue };
+export { Decrement, decrementSlice };
