@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../app";
 import { setDecrementValue } from "./DecrementSlice";
 import "./Decrement.css";
-import styles from "./Decrement.module.css";
 
 export const Decrement = () => {
   const [value, setValue] = useState(0);
@@ -10,7 +9,7 @@ export const Decrement = () => {
   const dispatch = useAppDispatch();
 
   console.log(state);
-  console.log("dispatch", styles);
+  console.log("dispatch");
 
   const handleClick = () => {
     console.log(

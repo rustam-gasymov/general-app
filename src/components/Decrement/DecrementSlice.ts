@@ -12,7 +12,6 @@ export const decrementSlice = createSlice({
       state.value = state.value - payload;
     },
   },
-  extraReducers: {},
 });
 
 export const { setDecrementValue } = decrementSlice.actions;

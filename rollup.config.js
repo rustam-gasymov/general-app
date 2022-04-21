@@ -19,7 +19,7 @@ const plugins = [
   babel({ babelHelpers: "bundled" }),
   localResolve(),
   terser(),
-  css(),
+  styles(),
 ];
 
 const config = [
