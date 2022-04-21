@@ -10,7 +10,7 @@ export const Decrement = () => {
   const dispatch = useAppDispatch();
 
   console.log(state);
-  console.log("dispatch");
+  console.log("dispatch", styles);
 
   const handleClick = () => {
     console.log(

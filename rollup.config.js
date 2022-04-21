@@ -8,6 +8,7 @@ import styles from "rollup-plugin-styles";
 import { terser } from "rollup-plugin-terser";
 import { babel } from "@rollup/plugin-babel";
 import pkg from "./package.json";
+import css from "@modular-css/rollup";
 
 const plugins = [
   typescript({
@@ -18,11 +19,7 @@ const plugins = [
   babel({ babelHelpers: "bundled" }),
   localResolve(),
   terser(),
-  postcss({
-    extract: true,
-    minimize: true,
-    modules: true,
-  }),
+  css(),
 ];
 
 const config = [
@@ -30,7 +27,7 @@ const config = [
     input: "./src/components/index.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
-    external: [/\.module.css$/],
+    external: [/\.css$/],
   },
   {
     input: "./src/components/index.ts",
