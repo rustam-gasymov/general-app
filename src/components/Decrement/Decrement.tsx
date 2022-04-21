@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../app";
 import { setDecrementValue } from "./DecrementSlice";
-// import "./Decrement.css";
+import "./Decrement.css";
 import styles from "./Decrement.module.css";
 
 export const Decrement = () => {
@@ -23,7 +23,7 @@ export const Decrement = () => {
   };
 
   return (
-    <button className={styles.btn} onClick={handleClick}>
+    <button className="btn" onClick={handleClick}>
       Decrement
     </button>
   );
