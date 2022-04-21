@@ -1,4 +1,4 @@
 import { Decrement } from "./Decrement";
-import { decrementSlice } from "./DecrementSlice";
+import { decrementSlice, setDecrementValue } from "./DecrementSlice";
 
-export { Decrement, decrementSlice };
+export { Decrement, decrementSlice, setDecrementValue };
