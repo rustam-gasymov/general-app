@@ -19,9 +19,9 @@ const plugins = [
   localResolve(),
   terser(),
   postcss({
-    sourceMap: true,
     extract: true,
     minimize: true,
+    modules: true,
   }),
 ];
 
@@ -30,6 +30,7 @@ const config = [
     input: "./src/components/index.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
+    external: [/\.module.css$/],
   },
   {
     input: "./src/components/index.ts",
